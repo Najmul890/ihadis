@@ -8,7 +8,7 @@ const Header = () => {
           <img src={logo} alt="logo" />
         </div>
         <div className="">
-          <h3 className="text-black font-bold text-lg ">হাদিস সমূহ</h3>
+          <h3 className="text-black font-bold text-xl ">হাদিস সমূহ</h3>
           <h5 className="text-secondary font-medium mt-1 text-sm ">
             হাদিস পড়ুন শিখুন এবং জানুন
           </h5>
