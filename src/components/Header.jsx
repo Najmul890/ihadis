@@ -1,4 +1,6 @@
 import logo from "../assets/home-logo.png";
+import HeaderSettingIcon from "./HeaderSettingIcon";
+import SettingDrawer from "./SettingDrawer";
 
 const Header = () => {
   return (
@@ -32,10 +34,11 @@ const Header = () => {
             <input type="text" className="grow" placeholder="Search Hadith" />
           </label>
         </div>
-        <div className="px-5 rounded-lg py-3 flex items-center gap-2 bg-primary ">
+        <div className="px-5 rounded-lg py-3 hidden min-[1536px]:flex items-center gap-2 bg-primary ">
             <span className="text-white text-[16.8px] font-semibold " >সাপোর্ট করুন</span>
             <img src="https://ihadis.com/assets/others/helping-hand.svg" alt="helping-hand-icon" />
         </div>
+        <SettingDrawer/>
       </div>
     </header>
   );

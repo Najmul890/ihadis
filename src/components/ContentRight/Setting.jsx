@@ -1,7 +1,16 @@
 const Setting = () => {
   return (
     <div className="bg-white rounded-lg w-full  p-4">
-      <h3 className="text-center text-2xl font-semibold ">সেটিংস</h3>
+      <div className="flex justify-between min-[1536px]:justify-center items-center ">
+        <span className="text-2xl font-semibold ">সেটিংস</span>
+        <label htmlFor="setting-drawer">
+          <img
+            className="block min-[1536px]:hidden "
+            src="https://ihadis.com/assets/others/right-side-bar/cross.svg"
+            alt="close-icon"
+          />
+        </label>
+      </div>
       <div className="mt-4">
         <h4 className="text-[16.8px] font-semibold ">আরবি ফন্ট সিলেক্ট করুন</h4>
         <div className="mt-2 flex justify-between items-center px-4 py-3 border rounded-md ">
@@ -33,7 +42,7 @@ const Setting = () => {
         </div>
       </div>
       <div className="mt-6">
-        <div className="flex justify-between items-center " >
+        <div className="flex justify-between items-center ">
           <span className="text-[16.8px] font-semibold ">নাইট মোড</span>
           <input type="checkbox" className="toggle" disabled />
         </div>
