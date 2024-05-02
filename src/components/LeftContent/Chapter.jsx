@@ -56,7 +56,7 @@ const chapters = [
 
 const Chapter = () => {
   return (
-    <div className="flex h-[64vh] overflow-y-scroll px-4 flex-col gap-4">
+    <div className="flex h-[70vh] min-[1280px]:h-[64vh] overflow-y-scroll px-4 flex-col gap-3 min-[1280px]:gap-4">
       {chapters.map((chapter, index) => (
         <div key={chapter.title} className={` flex gap-5 items-center rounded-lg px-4 py-5 ${index===0 ? "bg-[#ebfcf6] rounded-lg ":"" } `}>
            <div className="h-12 w-12  flex items-center justify-center relative" >
