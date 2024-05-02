@@ -1,3 +1,4 @@
+import ContentRight from "./ContentRight/ContentRight";
 import LeftContent from "./LeftContent/LeftContent";
 import LeftSidebar from "./LeftSidebar";
 import MiddleContent from "./MiddleContent/MiddleContent";
@@ -9,6 +10,7 @@ const Content = () => {
       <main className="flex basis-[94.8%] p-4 gap-5  rounded-tl-lg bg-[#e5e7eb] ">
          <LeftContent/>
          <MiddleContent/>
+         <ContentRight/>
       </main>
     </div>
   );

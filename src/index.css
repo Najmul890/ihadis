@@ -5,3 +5,7 @@
 ::-webkit-scrollbar {
     width: 0px;
   }
+
+  input[type="range"] {
+    accent-color: seagreen;
+  }
