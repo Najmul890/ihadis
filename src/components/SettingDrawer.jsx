@@ -4,7 +4,7 @@ import HeaderSettingIcon from "./HeaderSettingIcon";
 
 const SettingDrawer = () => {
   return (
-    <div className="drawer drawer-end">
+    <div className="drawer z-[100] drawer-end">
       <input id="setting-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
         {/* Page content here */}

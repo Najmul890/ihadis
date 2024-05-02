@@ -7,7 +7,7 @@ const Content = () => {
   return (
     <div className="flex " >
       <LeftSidebar />
-      <main className="flex basis-[94.8%] p-4 gap-5  rounded-tl-lg bg-[#e5e7eb] ">
+      <main className="flex basis-full lg:basis-[92%] min-[1536px]:basis-[94.8%] p-4 gap-5  rounded-tl-lg bg-[#e5e7eb] ">
          <LeftContent/>
          <MiddleContent/>
          <ContentRight/>

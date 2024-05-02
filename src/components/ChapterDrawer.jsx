@@ -3,7 +3,7 @@ import SearchBar from "./LeftContent/SearchBar";
 
 const ChapterDrawer = () => {
   return (
-    <div className="drawer">
+    <div className="drawer z-[100] ">
       <input id="chapter-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
         {/* Page content here */}

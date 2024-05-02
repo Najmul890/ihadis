@@ -12,12 +12,12 @@ const HadidhDetails = ({ info }) => {
           {info.position}
         </span>
       </div>
-      <p className="mt-4 text-right text-[22px] ">{info.arabicDetails}</p>
+      <p className="mt-4 text-right leading-[40px] text-[22px] ">{info.arabicDetails}</p>
       <div className="mt-10">
         <h5 className="text-primary  font-semibold text-[17px] ">
           {info.speaker}
         </h5>
-        <p className="mt-5 text-[17px]  font-semibold ">{info.details}</p>
+        <p className="mt-5 text-[17px] leading-10 font-semibold ">{info.details}</p>
       </div>
       <ChapterDetailsFooter/>
     </div>

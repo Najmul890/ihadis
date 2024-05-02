@@ -1,23 +1,29 @@
 import logo from "../assets/home-logo.png";
-import HeaderSettingIcon from "./HeaderSettingIcon";
+import SearchIcon from "./SearchIcon";
 import SettingDrawer from "./SettingDrawer";
 
 const Header = () => {
   return (
     <header className="p-4 flex justify-between items-center ">
-      <div className="flex gap-6 ">
+      <div className="flex items-center lg:items-start gap-6 ">
         <div>
-          <img src={logo} alt="logo" />
+          <img className="w-10 lg:w-[60px] h-10 lg:h-[60px] " src={logo} alt="logo" />
         </div>
-        <div className="">
-          <h3 className="text-black font-bold text-xl ">হাদিস সমূহ</h3>
+        <div className="hidden lg:block">
+          <h3 className="font-bold text-xl ">হাদিস সমূহ</h3>
           <h5 className="text-secondary font-medium mt-1 text-sm ">
             হাদিস পড়ুন শিখুন এবং জানুন
           </h5>
         </div>
+        <div className="block lg:hidden">
+          <h3 className="text-primary font-bold  text-xl sm:text-[27.2px] "> আল হাদিস</h3>
+        </div>
       </div>
-      <div className="flex items-center gap-[80px] ">
-        <div>
+      <div className="flex items-center gap-6 lg:gap-[80px] ">
+        <div className="block lg:hidden ">
+          <SearchIcon />
+        </div>
+        <div className="hidden lg:block ">
           <label className="input input-bordered flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,10 +41,17 @@ const Header = () => {
           </label>
         </div>
         <div className="px-5 rounded-lg py-3 hidden min-[1536px]:flex items-center gap-2 bg-primary ">
-            <span className="text-white text-[16.8px] font-semibold " >সাপোর্ট করুন</span>
-            <img src="https://ihadis.com/assets/others/helping-hand.svg" alt="helping-hand-icon" />
+          <span className="text-white text-[16.8px] font-semibold ">
+            সাপোর্ট করুন
+          </span>
+          <img
+            src="https://ihadis.com/assets/others/helping-hand.svg"
+            alt="helping-hand-icon"
+          />
         </div>
-        <SettingDrawer/>
+        <div className="block min-[1536px]:hidden ">
+          <SettingDrawer />
+        </div>
       </div>
     </header>
   );

@@ -45,10 +45,10 @@ const ChapterDetails = () => {
                   {info.chapter} অধ্যায়ঃ
                 </span>
               </div>
-              <div className="mt-4 text-[17px] font-semibold ">{info.title}</div>
+              <div className="mt-4 text-[17px] leading-[24px] font-semibold ">{info.title}</div>
             </div>
             <hr className="my-4" />
-            <p className="text-[17px] ">{info.summary}</p>
+            <p className="text-[17px] leading-7 ">{info.summary}</p>
           </div>
           <HadidhDetails info={info} />
         </div>
